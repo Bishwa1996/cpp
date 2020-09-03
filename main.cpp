@@ -1,16 +1,20 @@
 #include <iostream>
 
 using namespace std;
-
+int getMax(int num1, int num2, int num3){
+int result;
+if(num1 >= num2 && num1 >= num3){
+    result = num1;
+} else if(num2 >= num1 && num2 >= num3){
+result = num2;
+}
+else{
+    result = num3;
+}
+    return result;
+}
 int main()
 {
-    string characterName = "Richie";
-    int characterAge;
-    characterAge = 25;
-    cout << "My name is " << characterName << endl;
-    cout << "I am "<< characterAge <<" years old" << endl;
-    cout << characterName <<" is a boy " << endl;
-    cout << "I have lived on earth for " << characterAge << " years" << endl;
-
+    cout << getMax(4,5,6);
     return 0;
 }
