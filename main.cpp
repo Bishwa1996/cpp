@@ -1,16 +1,16 @@
 #include <iostream>
 
 using namespace std;
-
+int power(int baseNum, int powerNum){
+int result = 1;
+for(int i = 0;i < powerNum;i++){
+    result = result* baseNum;
+}
+return result;
+}
 int main()
 {
-   /* for(int i=1; i<=5; i++){
-        cout << i << endl;*/
-
-        int num[] = {1,2,5,7,9};
-        for(int i=2; i<5; i++){
-            cout<< num[i]<<endl;
-    }
+   cout<< power(2,3);
     return 0;
     }
 
