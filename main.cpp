@@ -5,22 +5,22 @@ using namespace std;
 
 int main()
 {
-    /*int numGrid[3][2]{ {1,2},
-                       {3,4},
-                       {5,6}
-    };
-    cout << numGrid[2][1];*/
+/*int age = 19;
+double gpa = 8.4;
+string name= "bishwa";
 
-    int numGrid[3][2]{ {1,2},
-                       {3,4},
-                       {5,6}};
-    for (int i=0; i<3; i++){
-        for(int j=0; j<2; j++){
-            cout<< numGrid[i][j];
-        }
-        cout<<endl;
-    }
+cout<< "Age:"<< &age<< endl;
+cout<< "Gpa:"<< &gpa<<endl;
+cout<< "Name:"<< &name<< endl;*/
 
+int age = 19;
+int *pAge = &age;
+double gpa = 8.4;
+double *pGpa = &gpa;
+string name= "bishwa";
+string *pName = &name;
+
+cout<< *pGpa;
 
     return 0;
     }
